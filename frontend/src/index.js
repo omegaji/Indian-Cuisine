@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Container} from "./components/Container"
 import {Landing} from "./components/Landing"
-
 import './index.css';
 
 ReactDOM.render(

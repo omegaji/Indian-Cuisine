@@ -58,6 +58,28 @@ exports.getFlavorState=(req,res)=>{
 
 }
 
+exports.dbFind=(req,res)=>{
+  console.log("in dbfind")
+  db.createIndex({index:{fields:["name","flavor_profile"]}})
+    .then(()=>{
+      console.log(req.body.flavor)
+      db.find({
+        selector:{
+          state: {$eq: req.body.state},
+          flavor_profile: {$eq: req.body.flavor}
+          // flavor_profile: req.body.flavor
+        },
+        limit:5,
+     
+      },
+     )
+     .then((result)=>{
+      return res.json(
+        {"out":result["docs"]}
+      )
+    })
+    })
+}
 
 exports.dbGetReciepe=(req,res)=>{
   db.createIndex({index:{fields:["name"]}})

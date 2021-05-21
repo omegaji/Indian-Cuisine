@@ -7,6 +7,8 @@ router.get("/getDbSize",userRoute.dbCount)
 router.get("/dbtest",userRoute.dbtest)
 router.post("/getFlavorState",userRoute.getFlavorState)
 router.post("/getReciepe",userRoute.dbGetReciepe)
+router.post("/getFind",userRoute.dbFind)
+
 
 
 
