@@ -10,6 +10,23 @@ html{
 body{
   margin:0px;
 }
+footer{
+  position: sticky;
+  width: 100%;
+  background-color: #040F0F;
+  color: #85BDBF;
+}
+footer>p{
+  margin-left:40%;
+  margin-block-end: 0em;
+
+}
+footer>p>a{
+  margin-left:1%;
+}
+footer>p>a>img{
+width: 0.8rem;
+}
 .landing{
   height: 100vh;
   margin:0;
@@ -24,7 +41,7 @@ body{
 .landing>div{
   font-size:2rem;
 }
-.landing>button{
+.landing>a>button{
   font-size:2rem;
   border-radius: 7px;
   background-color: #85BDBF;
@@ -33,7 +50,6 @@ body{
   padding:0.5em;
 }
 .container{
-border: 1px solid red;
 margin: 0 auto;
 max-width: 1200px;
 }
@@ -268,12 +284,39 @@ li>label{
   justify-content: center;
   align-items: center;
 }
-  .flex-find>div:nth-child(2){
+.flex-find>div:nth-child(2){
+  /* display: flex;
+  flex-direction: column; */
+  width: 40%;
+  font-size: 2em;
+  margin-right: 10%;
+}
+  .flex-find>div:nth-child(3){
     /* display: flex;
     flex-direction: column; */
-    margin-left: 25%;
   }
+.finded{
+  display: flex;
+  margin-left: 2.5rem;
 
+  flex-direction: column;
+}
+.finded>div:nth-child(odd){
+background-color: #85BDBF;
+padding: 0.4rem;
+border-left: 4px solid #040F0F;
+width:10rem;
+margin-bottom: 0.1rem;
+}
+
+.finded>div:nth-child(even){
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  }
 .flex-find>div>select{
   
   width: 100%;
@@ -282,11 +325,73 @@ li>label{
   border: 3px solid #57737A;
   padding: 1rem;
   border-radius: 4px;
-  margin: 0 auto;
   margin-right: 5%;
+  margin-bottom: 5%;
 
 }
+.finded>div>img{
+  width: 10%;
+  margin-right: 1rem;
 
+}
+.finded>div>span{
+  background-color: #040f0fd5 ;
+  color:#85BDBF; 
+  padding:0rem 0.3rem 0rem 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 0.5em;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  margin-bottom:5%;
+}
+.about>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  position: relative;
+}
+.about>div>p{
+  margin-block-end: 0em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about>div>p:nth-child(1){
+  font-size: 1.2rem;
+  background-color: #040F0F;
+  color:#85BDBF;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+.about>div>p:nth-child(3){
+ border-top:2px solid #040F0F;
+ padding:0.5rem;  
+ border-bottom:2px solid #040F0F;
+ text-align: justify;
+
+
+}
+p>span{
+  font-size: 1rem;
+  background-color: #85BDBF;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
+
+}
+.notes{
+  position:absolute;
+  left:5%;
+  top:60%;
+  font-size: 2rem;
+}
 @media only screen and (max-width: 400px) {
   html{
     font-family: 'Nunito', sans-serif;  font-size: 7px;

@@ -1,5 +1,5 @@
-2021/05/22-00:15:44.671 37c4 Recovering log #763
-2021/05/22-00:15:44.671 37c4 Level-0 table #766: started
-2021/05/22-00:15:44.682 37c4 Level-0 table #766: 237 bytes OK
-2021/05/22-00:15:44.691 37c4 Delete type=0 #763
-2021/05/22-00:15:44.691 37c4 Delete type=3 #761
+2021/05/23-18:37:06.344 fe0 Recovering log #965
+2021/05/23-18:37:06.344 fe0 Level-0 table #967: started
+2021/05/23-18:37:06.349 fe0 Level-0 table #967: 237 bytes OK
+2021/05/23-18:37:06.357 fe0 Delete type=0 #965
+2021/05/23-18:37:06.358 fe0 Delete type=3 #963

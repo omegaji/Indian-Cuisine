@@ -69,7 +69,7 @@ exports.dbFind=(req,res)=>{
           flavor_profile: {$eq: req.body.flavor}
           // flavor_profile: req.body.flavor
         },
-        limit:5,
+        limit:3,
      
       },
      )
